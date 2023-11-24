@@ -1,0 +1,215 @@
+{
+  "resolvedId": "/Users/eladventures/Desktop/codes/easyjoey.org/src/layouts/Default.vue",
+  "transforms": [
+    {
+      "name": "vite:load-fallback",
+      "result": "<template>\n <div :data-theme=\"theme\">\n  <div class=\"navbar bg-transparent z-40\">\n    <div class=\"navbar-start\"></div>\n    <div class=\"flex items-center space-x-1 lg:space-x-.10\">\n      <img src=\"../assets/images/easy-joey-logo-yellow.png\" alt=\"Your Logo\" class=\"h-8 w-8\">\n      <nuxt-link class=\"btn btn-ghost md:text-2xl font-luciole mt-3 text-yellow-500\" to=\"/\">EasyJoey</nuxt-link>\n    </div>\n    <div class=\"navbar-end\">\n      <!-- <select v-model=\"theme\" class=\"select select-primary md:w-full md:max-w-xs\">\n        <option disabled selected>Select Theme</option>\n        <option v-for=\"theme in themes\" :value=\"theme\" :key=\"theme\">\n          <span class=\"uppercase\">{{ theme }}</span>\n        </option>\n      </select> -->\n    </div>\n  </div>\n  <slot />\n</div>\n\n</template>\n\n<script>\nimport { ref, watch, onMounted } from 'vue';\nconst THEMES = [\n  'light',\n  'dark',\n  'cupcake',\n  'bumblebee',\n  'emerald',\n  'corporate',\n  'synthwave',\n  'retro',\n  'cyberpunk',\n  'valentine',\n  'halloween',\n  'garden',\n  'forest',\n  'aqua',\n  'lofi',\n  'pastel',\n  'fantasy',\n  'wireframe',\n  'black',\n  'luxury',\n  'dracula',\n  'cmyk',\n  'autumn',\n  'business',\n  'acid',\n  'lemonade',\n  'night',\n  'coffee',\n  'winter',\n];\nexport default {\n  setup () {\n    const theme = ref('light');\n    watch(theme, (value) => {\n      localStorage.setItem('daisyui-theme', value);\n    });\n    onMounted(() => {\n      // theme.value = 'light'\n      theme.value = localStorage.getItem('daisyui-theme') || 'light';\n    });\n    return {\n      theme,\n      themes: THEMES,\n    };\n  },\n};\n</script>\n\n",
+      "start": 1700867217259,
+      "end": 1700867217419,
+      "sourcemaps": null
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1700867217419,
+      "end": 1700867217419,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1700867217419,
+      "end": 1700867217419,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1700867217419,
+      "end": 1700867217419,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "start": 1700867217419,
+      "end": 1700867217419,
+      "order": "normal"
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1700867217419,
+      "end": 1700867217419,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1700867217419,
+      "end": 1700867217419,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1700867217419,
+      "end": 1700867217419,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": "\nimport { ref, watch, onMounted } from 'vue';\nconst THEMES = [\n  'light',\n  'dark',\n  'cupcake',\n  'bumblebee',\n  'emerald',\n  'corporate',\n  'synthwave',\n  'retro',\n  'cyberpunk',\n  'valentine',\n  'halloween',\n  'garden',\n  'forest',\n  'aqua',\n  'lofi',\n  'pastel',\n  'fantasy',\n  'wireframe',\n  'black',\n  'luxury',\n  'dracula',\n  'cmyk',\n  'autumn',\n  'business',\n  'acid',\n  'lemonade',\n  'night',\n  'coffee',\n  'winter',\n];\nconst _sfc_main = {\n  setup () {\n    const theme = ref('light');\n    watch(theme, (value) => {\n      localStorage.setItem('daisyui-theme', value);\n    });\n    onMounted(() => {\n      // theme.value = 'light'\n      theme.value = localStorage.getItem('daisyui-theme') || 'light';\n    });\n    return {\n      theme,\n      themes: THEMES,\n    };\n  },\n};\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\nimport _imports_0 from '../assets/images/easy-joey-logo-yellow.png'\n\n\nconst _hoisted_1 = [\"data-theme\"]\nconst _hoisted_2 = { class: \"navbar bg-transparent z-40\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"navbar-start\" }, null, -1)\nconst _hoisted_4 = { class: \"flex items-center space-x-1 lg:space-x-.10\" }\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"Your Logo\",\n  class: \"h-8 w-8\"\n}, null, -1)\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"navbar-end\" }, null, -1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = _resolveComponent(\"nuxt-link\")\n\n  return (_openBlock(), _createElementBlock(\"div\", { \"data-theme\": $setup.theme }, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        _hoisted_5,\n        _createVNode(_component_nuxt_link, {\n          class: \"btn btn-ghost md:text-2xl font-luciole mt-3 text-yellow-500\",\n          to: \"/\"\n        }, {\n          default: _withCtx(() => [\n            _createTextVNode(\"EasyJoey\")\n          ]),\n          _: 1\n        })\n      ]),\n      _hoisted_6\n    ]),\n    _renderSlot(_ctx.$slots, \"default\")\n  ], 8, _hoisted_1))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1700867217419,
+      "end": 1700867217421,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:chunk-error",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1700867217421,
+      "end": 1700867217421,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1700867217421,
+      "end": 1700867217422,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1700867217422,
+      "end": 1700867217422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1700867217422,
+      "end": 1700867217422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:runtime-paths-dep",
+      "start": 1700867217422,
+      "end": 1700867217422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:route-injection-plugin",
+      "start": 1700867217422,
+      "end": 1700867217422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "result": "import { default as __nuxt_component_0 } from \"/Users/eladventures/Desktop/codes/easyjoey.org/node_modules/nuxt/dist/app/components/nuxt-link\";\n\nimport { ref, watch, onMounted } from 'vue';\nconst THEMES = [\n  'light',\n  'dark',\n  'cupcake',\n  'bumblebee',\n  'emerald',\n  'corporate',\n  'synthwave',\n  'retro',\n  'cyberpunk',\n  'valentine',\n  'halloween',\n  'garden',\n  'forest',\n  'aqua',\n  'lofi',\n  'pastel',\n  'fantasy',\n  'wireframe',\n  'black',\n  'luxury',\n  'dracula',\n  'cmyk',\n  'autumn',\n  'business',\n  'acid',\n  'lemonade',\n  'night',\n  'coffee',\n  'winter',\n];\nconst _sfc_main = {\n  setup () {\n    const theme = ref('light');\n    watch(theme, (value) => {\n      localStorage.setItem('daisyui-theme', value);\n    });\n    onMounted(() => {\n      // theme.value = 'light'\n      theme.value = localStorage.getItem('daisyui-theme') || 'light';\n    });\n    return {\n      theme,\n      themes: THEMES,\n    };\n  },\n};\n\nimport { createElementVNode as _createElementVNode, createTextVNode as _createTextVNode, resolveComponent as _resolveComponent, withCtx as _withCtx, createVNode as _createVNode, renderSlot as _renderSlot, openBlock as _openBlock, createElementBlock as _createElementBlock } from \"vue\"\nimport _imports_0 from '../assets/images/easy-joey-logo-yellow.png'\n\n\nconst _hoisted_1 = [\"data-theme\"]\nconst _hoisted_2 = { class: \"navbar bg-transparent z-40\" }\nconst _hoisted_3 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"navbar-start\" }, null, -1)\nconst _hoisted_4 = { class: \"flex items-center space-x-1 lg:space-x-.10\" }\nconst _hoisted_5 = /*#__PURE__*/_createElementVNode(\"img\", {\n  src: _imports_0,\n  alt: \"Your Logo\",\n  class: \"h-8 w-8\"\n}, null, -1)\nconst _hoisted_6 = /*#__PURE__*/_createElementVNode(\"div\", { class: \"navbar-end\" }, null, -1)\n\nfunction _sfc_render(_ctx, _cache, $props, $setup, $data, $options) {\n  const _component_nuxt_link = __nuxt_component_0\n\n  return (_openBlock(), _createElementBlock(\"div\", { \"data-theme\": $setup.theme }, [\n    _createElementVNode(\"div\", _hoisted_2, [\n      _hoisted_3,\n      _createElementVNode(\"div\", _hoisted_4, [\n        _hoisted_5,\n        _createVNode(_component_nuxt_link, {\n          class: \"btn btn-ghost md:text-2xl font-luciole mt-3 text-yellow-500\",\n          to: \"/\"\n        }, {\n          default: _withCtx(() => [\n            _createTextVNode(\"EasyJoey\")\n          ]),\n          _: 1\n        })\n      ]),\n      _hoisted_6\n    ]),\n    _renderSlot(_ctx.$slots, \"default\")\n  ], 8, _hoisted_1))\n}\n\n\nimport _export_sfc from '\u0000plugin-vue:export-helper'\nexport default /*#__PURE__*/_export_sfc(_sfc_main, [['render',_sfc_render]])",
+      "start": 1700867217422,
+      "end": 1700867217422,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1700867217422,
+      "end": 1700867217422,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1700867217422,
+      "end": 1700867217422,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1700867217422,
+      "end": 1700867217422,
+      "order": "normal"
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+{
+  "resolvedId": "/Users/eladventures/Desktop/codes/easyjoey.org/src/pages/index.vue?vue&type=style&index=0&scoped=6b0483f5&lang.css",
+  "transforms": [
+    {
+      "name": "vite:vue",
+      "result": "\n.background {\n  width: 100vw;\n  height: 50vh;\n  background-image: url('../assets/images/easy-joey-people.png');\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  filter: none;\n}\n\n/* Add other styling as needed */\n",
+      "start": 1700867219286,
+      "end": 1700867219286,
+      "sourcemaps": {
+        "version": 3,
+        "sources": [
+          "/Users/eladventures/Desktop/codes/easyjoey.org/src/pages/index.vue"
+        ],
+        "names": [],
+        "mappings": ";AA2EA,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE;EACV,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EACZ,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC9D,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;EAC1B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC;EAC5B,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC;AACd;;AAEA,CAAC,EAAE,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC,EAAE,CAAC,CAAC,CAAC,CAAC,CAAC,EAAE,CAAC",
+        "file": "/Users/eladventures/Desktop/codes/easyjoey.org/src/pages/index.vue",
+        "sourceRoot": "",
+        "sourcesContent": [
+          "<template>\n\n\n<div class=\"hero bg-white\" style=\"height: 48vh; background-size: cover;\">\n  <div class=\"hero-content text-center\">\n    <div class=\"max-w-2xl\">\n      <h1 class=\"text-5xl lg:text-6xl mb-2 -mt-12\" data-aos=\"zoom-in\">\n  <span class=\"text-yellow-500\">Easy</span> Health Records Access for Every \n  <span class=\"text-yellow-500\">Joey</span>\n</h1>\n\n<p class=\"text-2xl lg:text-3xl mb-5 text-gray-600\">Open Source, Secure, Interoperable, Private, Record-Centric, and Fortified with AI </p>\n\n      <p>We are actively seeking skilled and passionate developers <br> to join and contribute to this open-source project.</p>\n      <button class=\"btn btn-neutral text-white text-lg lg:text-xl mt-3\">\n  <a href=\"https://39orqvxdkdz.typeform.com/to/X5WZCFEG\" target=\"_blank\" rel=\"noopener noreferrer\">I want to support this worthy cause!</a>\n</button>\n\n    </div>\n  </div>\n</div>\n\n\n\n<!-- background image section -->\n  <section class=\"background\">\n    <div class=\"hero\" :style=\"'background-image: url(' + backgroundImage + '); height: 55vh;'\">\n      <div class=\"hero-overlay bg-opacity-0\"></div>\n    </div>\n  </section>\n\n\n \n\n</template>\n\n<script>\nimport { useHead } from '#app';\nimport { definePageMeta } from '#imports';\nimport GenericPanel from '~/components/commons/GenericPanel';\nimport { ref } from 'vue';\nimport ogBanner from '../assets/images/nuxtwind-daisy-og-banner.jpg';\n\nexport default {\n  components: {\n    GenericPanel,\n  },\n  setup() {\n    definePageMeta({\n      layout: 'default',\n    });\n\n    useHead({\n      title: 'EasyJoey',\n      description: 'EasyJoey is an Open Source Patient Records Organizer.',\n      link: [\n        { rel: 'icon', type: 'image/png', href: '/favicon.png' },\n      ],\n      meta: [\n        {\n          hid: 'og:image',\n          name: 'og:image',\n          property: 'og:image',\n          content: ogBanner,\n        },\n      ],\n    });\n\n    \n  },\n};\n</script>\n\n\n<style scoped>\n.background {\n  width: 100vw;\n  height: 50vh;\n  background-image: url('../assets/images/easy-joey-people.png');\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  filter: none;\n}\n\n/* Add other styling as needed */\n</style>"
+        ]
+      }
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1700867219286,
+      "end": 1700867219286,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:layer-aliasing",
+      "start": 1700867219286,
+      "end": 1700867219286,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1700867219286,
+      "end": 1700867219286,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:server-devonly:transform",
+      "start": 1700867219286,
+      "end": 1700867219286,
+      "order": "pre"
+    },
+    {
+      "name": "nuxt:client-fallback-auto-id",
+      "start": 1700867219286,
+      "end": 1700867219286,
+      "order": "pre"
+    },
+    {
+      "name": "vite:css",
+      "result": ".background{background-image:url(__VITE_ASSET__f4b8e046__);background-repeat:no-repeat;background-size:100% auto;filter:none;height:50vh;width:100vw}",
+      "start": 1700867219286,
+      "end": 1700867219446,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/eladventures/Desktop/codes/easyjoey.org/src/pages/index.vue",
+        "mappings": "AACA,YAGE,8CAA8D,CAE9D,2BAA4B,CAD5B,yBAA0B,CAE1B,WAAY,CAJZ,WAAY,CADZ,WAMF",
+        "names": [],
+        "sources": [
+          "/Users/eladventures/Desktop/codes/easyjoey.org/src/pages/index.vue"
+        ],
+        "sourcesContent": [
+          "\n.background {\n  width: 100vw;\n  height: 50vh;\n  background-image: url('../assets/images/easy-joey-people.png');\n  background-size: 100% auto;\n  background-repeat: no-repeat;\n  filter: none;\n}\n\n/* Add other styling as needed */\n"
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:esbuild",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:json",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:vue",
+      "result": ".background[data-v-6b0483f5]{background-image:url(__VITE_ASSET__f4b8e046__);background-repeat:no-repeat;background-size:100% auto;filter:none;height:50vh;width:100vw}",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal",
+      "sourcemaps": {
+        "file": "/Users/eladventures/Desktop/codes/easyjoey.org/src/pages/index.vue",
+        "mappings": "AAAA,6BAAY,8CAA8C,CAAC,2BAA2B,CAAC,yBAAyB,CAAC,WAAW,CAAC,WAAW,CAAC,WAAW",
+        "names": [],
+        "sources": [
+          "/Users/eladventures/Desktop/codes/easyjoey.org/src/pages/index.vue"
+        ],
+        "sourcesContent": [
+          null
+        ],
+        "version": 3
+      }
+    },
+    {
+      "name": "vite:vue-jsx",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:remove-plugin-metadata",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:components:imports",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "replace",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "ssr-styles",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:define",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:css-post",
+      "result": "export default ''",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal",
+      "sourcemaps": {
+        "mappings": ""
+      }
+    },
+    {
+      "name": "vite:build-html",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:worker-import-meta-url",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:asset-import-meta-url",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "commonjs",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:dynamic-import-vars",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "vite:import-glob",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "normal"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:composable-keys",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:imports-transform",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "post"
+    },
+    {
+      "name": "unctx:transform",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:pages-macros-transform",
+      "start": 1700867219446,
+      "end": 1700867219446,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-template",
+      "start": 1700867219447,
+      "end": 1700867219447,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:components-loader",
+      "start": 1700867219447,
+      "end": 1700867219447,
+      "order": "post"
+    },
+    {
+      "name": "nuxt:tree-shake-composables:transform",
+      "start": 1700867219447,
+      "end": 1700867219447,
+      "order": "post"
+    },
+    {
+      "name": "vite:build-import-analysis",
+      "start": 1700867219447,
+      "end": 1700867219447,
+      "order": "normal"
+    },
+    {
+      "name": "vite:reporter",
+      "start": 1700867219447,
+      "end": 1700867219447,
+      "order": "normal"
+    }
+  ]
+}
